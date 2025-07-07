@@ -32,4 +32,4 @@ int main(){
     q = nullptr;
 
     return 0;
-}
+}   
