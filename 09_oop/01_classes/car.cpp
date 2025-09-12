@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Static variable
 int Car::totalCount = 0;
 
 // Default Constructor
@@ -45,5 +46,8 @@ void Car::Dashboard(){
     cout << "Fuel: " << fuel << endl;
     cout << "Speed: " << speed << endl;
     cout << "Passengers: " << passengers << endl;
+}
+// Static Function
+void Car::showCars(){
     cout << "Total count: " << totalCount << endl;
 }

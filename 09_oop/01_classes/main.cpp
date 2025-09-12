@@ -1,6 +1,8 @@
 #include "car.h"
 
 int main(){
+    Car::showCars();
+
     Car car(4);
     // car.FillFuel(5);
     car.Accelerate();

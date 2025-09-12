@@ -14,4 +14,5 @@ class Car{
         void Brake();
         void AddPassengers(int count);
         void Dashboard();
+        static void showCars();
 };
