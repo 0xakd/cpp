@@ -3,14 +3,28 @@
 
 using namespace std;
 
+int Car::totalCount = 0;
+
+// Default Constructor
 Car::Car(){
-    fuel = 0;
-    speed = 0;
-    passengers = 0; 
+    ++totalCount;
+    cout << "Car()" << endl;
 }
 
-void Car::FillFuel(float amount)
-{
+// Parameterised Constructor
+Car::Car(float amount){
+    ++totalCount;
+    cout << "Car()" << endl;
+    fuel = amount;
+}
+
+// Deconstructor
+Car::~Car(){
+    --totalCount;
+    cout << "~Car()" << endl;
+}
+
+void Car::FillFuel(float amount){
     fuel = amount;
 }
 
@@ -31,4 +45,5 @@ void Car::Dashboard(){
     cout << "Fuel: " << fuel << endl;
     cout << "Speed: " << speed << endl;
     cout << "Passengers: " << passengers << endl;
+    cout << "Total count: " << totalCount << endl;
 }
