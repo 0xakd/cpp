@@ -42,7 +42,7 @@ void Car::AddPassengers(int count){
     passengers = count;
 }
 
-void Car::Dashboard(){
+void Car::Dashboard()const {
     cout << "Fuel: " << fuel << endl;
     cout << "Speed: " << speed << endl;
     cout << "Passengers: " << passengers << endl;

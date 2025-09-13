@@ -3,11 +3,11 @@
 int main(){
     Car::showCars();
 
-    Car car(4);
+    const Car car(4);
     // car.FillFuel(5);
-    car.Accelerate();
-    car.Accelerate();
-    car.Accelerate();
+    // car.Accelerate();
+    // car.Accelerate();
+    // car.Accelerate();
     car.Dashboard();                                    
     
     Car c2, c3;

@@ -13,6 +13,6 @@ class Car{
         void Accelerate();
         void Brake();
         void AddPassengers(int count);
-        void Dashboard();
+        void Dashboard()const ;
         static void showCars();
 };
