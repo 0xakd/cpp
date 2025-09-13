@@ -12,4 +12,7 @@ int main(){
     
     Car c2, c3;
     car.Dashboard();
+
+    Car::showCars();
+
 }
