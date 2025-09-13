@@ -7,16 +7,25 @@ using namespace std;
 int Car::totalCount = 0;
 
 // Default Constructor
-Car::Car(){
-    ++totalCount;
-    cout << "Car()" << endl;
+Car::Car():Car(0){
+    cout << " car() "<<endl;
+
 }
 
+
+
 // Parameterised Constructor
-Car::Car(float amount){
+Car::Car(float amount):Car(amount, 0){
+    cout << " car(float) "<<endl;
+}
+
+Car::Car(float amount, int pass){
+    cout << " car(float, int) "<<endl;
     ++totalCount;
-    cout << "Car()" << endl;
     fuel = amount;
+    speed = 0;
+    passengers = pass;
+
 }
 
 // Deconstructor
